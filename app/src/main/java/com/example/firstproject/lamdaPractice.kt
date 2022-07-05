@@ -31,6 +31,7 @@ fun main(){
     println(invokeLamda(lamda1,4.1))
     println(invokeLamda(lamda1,4.2))
     println(invokeLamda2(lamda1))
+    println(invokeLamda2 { it>3.2 }) // 마지막 parameter가 lamda식일 때 사용 가능
 
     println(ll(10))
     println(Iex(10))
@@ -68,3 +69,4 @@ fun invokeLamda (lamda : (Double) -> (Boolean), num : Double) : (Boolean){
 fun invokeLamda2 (lamda : (Double) -> Boolean) : Boolean {
     return lamda(4.1)
 }
+
