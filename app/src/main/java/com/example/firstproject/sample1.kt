@@ -136,5 +136,3 @@ fun ignoreNulls(){
         println("My email is ${email}")
     }
 }
-
-// Class
